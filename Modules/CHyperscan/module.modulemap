@@ -1,0 +1,5 @@
+module CHyperscan [system] {
+  umbrella header "umbrella.h"
+  link "libhs"
+  export *
+}

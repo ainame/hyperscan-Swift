@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"CHyperscan::CHyperscan::ProductTarget" /* CHyperscan */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXAggregateTarget "CHyperscan" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = CHyperscan;
+			productName = CHyperscan;
+		};
+		"Hyperscan::HyperscanPackageTests::ProductTarget" /* HyperscanPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_49 /* Build configuration list for PBXAggregateTarget "HyperscanPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_52 /* PBXTargetDependency */,
+			);
+			name = HyperscanPackageTests;
+			productName = HyperscanPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		FDDF222021899B1B00CA8989 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF221E21899AC900CA8989 /* Match.swift */; };
+		FDE922DB2182F7CA00E8BCA3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922D92182F73700E8BCA3 /* Result.swift */; };
+		FDE922DE2182F82C00E8BCA3 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922DC2182F80E00E8BCA3 /* Context.swift */; };
+		FDE922E12186090100E8BCA3 /* ScratchPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922DF2186081D00E8BCA3 /* ScratchPool.swift */; };
+		FDE922E42188441900E8BCA3 /* MatchingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922E2218841AD00E8BCA3 /* MatchingOptions.swift */; };
+		FDE922E72188479400E8BCA3 /* CompileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922E5218846B900E8BCA3 /* CompileOptions.swift */; };
+		OBJ_31 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
+		OBJ_33 /* Hyperscan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hyperscan::Hyperscan::Product" /* Hyperscan.framework */; };
+		OBJ_40 /* Hyperscan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Hyperscan.swift */; };
+		OBJ_47 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_58 /* HyperscanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* HyperscanTests.swift */; };
+		OBJ_59 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
+		OBJ_61 /* Hyperscan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hyperscan::Hyperscan::Product" /* Hyperscan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDE922D6217D55FE00E8BCA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hyperscan::Hyperscan";
+			remoteInfo = Hyperscan;
+		};
+		FDE922D7217D55FE00E8BCA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hyperscan::Hyperscan";
+			remoteInfo = Hyperscan;
+		};
+		FDE922D8217D55FE00E8BCA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hyperscan::HyperscanTests";
+			remoteInfo = HyperscanTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDF221E21899AC900CA8989 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		FDE922D92182F73700E8BCA3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FDE922DC2182F80E00E8BCA3 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		FDE922DF2186081D00E8BCA3 /* ScratchPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPool.swift; sourceTree = "<group>"; };
+		FDE922E2218841AD00E8BCA3 /* MatchingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingOptions.swift; sourceTree = "<group>"; };
+		FDE922E5218846B900E8BCA3 /* CompileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompileOptions.swift; sourceTree = "<group>"; };
+		"Hyperscan::Example::Product" /* Example */ = {isa = PBXFileReference; lastKnownFileType = text; path = Example; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Hyperscan::Hyperscan::Product" /* Hyperscan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyperscan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Hyperscan::HyperscanTests::Product" /* HyperscanTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HyperscanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_11 /* Hyperscan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hyperscan.swift; sourceTree = "<group>"; };
+		OBJ_14 /* HyperscanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperscanTests.swift; sourceTree = "<group>"; };
+		OBJ_15 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_33 /* Hyperscan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* Hyperscan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Hyperscan */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* Hyperscan.swift */,
+				FDE922D92182F73700E8BCA3 /* Result.swift */,
+				FDE922DC2182F80E00E8BCA3 /* Context.swift */,
+				FDE922DF2186081D00E8BCA3 /* ScratchPool.swift */,
+				FDE922E2218841AD00E8BCA3 /* MatchingOptions.swift */,
+				FDE922E5218846B900E8BCA3 /* CompileOptions.swift */,
+				FDDF221E21899AC900CA8989 /* Match.swift */,
+			);
+			name = Hyperscan;
+			path = Sources/Hyperscan;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_12 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* HyperscanTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_13 /* HyperscanTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* HyperscanTests.swift */,
+				OBJ_15 /* XCTestManifests.swift */,
+			);
+			name = HyperscanTests;
+			path = Tests/HyperscanTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Hyperscan::HyperscanTests::Product" /* HyperscanTests.xctest */,
+				"Hyperscan::Hyperscan::Product" /* Hyperscan.framework */,
+				"Hyperscan::Example::Product" /* Example */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_12 /* Tests */,
+				OBJ_16 /* Modules */,
+				OBJ_17 /* Dependencies */,
+				OBJ_18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Example */,
+				OBJ_10 /* Hyperscan */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* main.swift */,
+			);
+			name = Example;
+			path = Sources/Example;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Hyperscan::Example" /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				OBJ_30 /* Sources */,
+				OBJ_32 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_34 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = "Hyperscan::Example::Product" /* Example */;
+			productType = "com.apple.product-type.tool";
+		};
+		"Hyperscan::Hyperscan" /* Hyperscan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "Hyperscan" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+				OBJ_41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hyperscan;
+			productName = Hyperscan;
+			productReference = "Hyperscan::Hyperscan::Product" /* Hyperscan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Hyperscan::HyperscanTests" /* HyperscanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "HyperscanTests" */;
+			buildPhases = (
+				OBJ_57 /* Sources */,
+				OBJ_60 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_62 /* PBXTargetDependency */,
+			);
+			name = HyperscanTests;
+			productName = HyperscanTests;
+			productReference = "Hyperscan::HyperscanTests::Product" /* HyperscanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Hyperscan::SwiftPMPackageDescription" /* HyperscanPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_43 /* Build configuration list for PBXNativeTarget "HyperscanPackageDescription" */;
+			buildPhases = (
+				OBJ_46 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperscanPackageDescription;
+			productName = HyperscanPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Hyperscan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"CHyperscan::CHyperscan::ProductTarget" /* CHyperscan */,
+				"Hyperscan::Example" /* Example */,
+				"Hyperscan::Hyperscan" /* Hyperscan */,
+				"Hyperscan::SwiftPMPackageDescription" /* HyperscanPackageDescription */,
+				"Hyperscan::HyperscanPackageTests::ProductTarget" /* HyperscanPackageTests */,
+				"Hyperscan::HyperscanTests" /* HyperscanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_31 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				FDE922DE2182F82C00E8BCA3 /* Context.swift in Sources */,
+				FDE922DB2182F7CA00E8BCA3 /* Result.swift in Sources */,
+				FDE922E72188479400E8BCA3 /* CompileOptions.swift in Sources */,
+				FDE922E42188441900E8BCA3 /* MatchingOptions.swift in Sources */,
+				FDE922E12186090100E8BCA3 /* ScratchPool.swift in Sources */,
+				OBJ_40 /* Hyperscan.swift in Sources */,
+				FDDF222021899B1B00CA8989 /* Match.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_47 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_58 /* HyperscanTests.swift in Sources */,
+				OBJ_59 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hyperscan::Hyperscan" /* Hyperscan */;
+			targetProxy = FDE922D6217D55FE00E8BCA3 /* PBXContainerItemProxy */;
+		};
+		OBJ_52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hyperscan::HyperscanTests" /* HyperscanTests */;
+			targetProxy = FDE922D8217D55FE00E8BCA3 /* PBXContainerItemProxy */;
+		};
+		OBJ_62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hyperscan::Hyperscan" /* Hyperscan */;
+			targetProxy = FDE922D7217D55FE00E8BCA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/Example_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Example;
+			};
+			name = Debug;
+		};
+		OBJ_29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/Example_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Example;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/Hyperscan_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyperscan;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Hyperscan;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/Hyperscan_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyperscan;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Hyperscan;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/HyperscanTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HyperscanTests;
+			};
+			name = Debug;
+		};
+		OBJ_56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Modules/CHyperscan",
+				);
+				INFOPLIST_FILE = Hyperscan.xcodeproj/HyperscanTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/hyperscan/5.0.0/include/hs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/hyperscan/5.0.0/lib",
+					"-lhs",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/hyperscan/5.0.0/include/hs";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = HyperscanTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Hyperscan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_23 /* Build configuration list for PBXAggregateTarget "CHyperscan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_24 /* Debug */,
+				OBJ_25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_27 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "Hyperscan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_43 /* Build configuration list for PBXNativeTarget "HyperscanPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_44 /* Debug */,
+				OBJ_45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_49 /* Build configuration list for PBXAggregateTarget "HyperscanPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_50 /* Debug */,
+				OBJ_51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_54 /* Build configuration list for PBXNativeTarget "HyperscanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
