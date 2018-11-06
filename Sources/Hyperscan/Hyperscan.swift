@@ -41,7 +41,7 @@ public class Hyperscan {
             
             try scan(context, scratch, inputPtr, length, &matchResult)
         } catch {
-            print(error)
+            Debug.run { print(error, to: &standardError) }
             return false
         }
         
@@ -61,7 +61,7 @@ public class Hyperscan {
                                           context.compileErrorPtr))
         
         if result != HSResult.success {
-            swift_print_compile_error(context.compileErrorPtr)
+            Debug.run { swift_print_compile_error(context.compileErrorPtr) }
             throw result
         }
     }

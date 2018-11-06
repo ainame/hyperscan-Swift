@@ -32,6 +32,8 @@
 
 /* Begin PBXBuildFile section */
 		FD02F01221914E2C00DB1304 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD02F01021914E1300DB1304 /* MatchResult.swift */; };
+		FD02F0182191564D00DB1304 /* FileHandle+TextOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD02F0162191563300DB1304 /* FileHandle+TextOutputStream.swift */; };
+		FD02F01B2191580A00DB1304 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD02F019219157CF00DB1304 /* Debug.swift */; };
 		FDDF222021899B1B00CA8989 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF221E21899AC900CA8989 /* Match.swift */; };
 		FDE922DB2182F7CA00E8BCA3 /* HSResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922D92182F73700E8BCA3 /* HSResult.swift */; };
 		FDE922DE2182F82C00E8BCA3 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE922DC2182F80E00E8BCA3 /* Context.swift */; };
@@ -73,6 +75,8 @@
 
 /* Begin PBXFileReference section */
 		FD02F01021914E1300DB1304 /* MatchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
+		FD02F0162191563300DB1304 /* FileHandle+TextOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileHandle+TextOutputStream.swift"; sourceTree = "<group>"; };
+		FD02F019219157CF00DB1304 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		FDDF221E21899AC900CA8989 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		FDE922D92182F73700E8BCA3 /* HSResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSResult.swift; sourceTree = "<group>"; };
 		FDE922DC2182F80E00E8BCA3 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				FDE922E5218846B900E8BCA3 /* CompileOptions.swift */,
 				FDDF221E21899AC900CA8989 /* Match.swift */,
 				FD02F01021914E1300DB1304 /* MatchResult.swift */,
+				FD02F0162191563300DB1304 /* FileHandle+TextOutputStream.swift */,
+				FD02F019219157CF00DB1304 /* Debug.swift */,
 			);
 			name = Hyperscan;
 			path = Sources/Hyperscan;
@@ -309,10 +315,12 @@
 			buildActionMask = 0;
 			files = (
 				FD02F01221914E2C00DB1304 /* MatchResult.swift in Sources */,
+				FD02F01B2191580A00DB1304 /* Debug.swift in Sources */,
 				FDE922DE2182F82C00E8BCA3 /* Context.swift in Sources */,
 				FDE922DB2182F7CA00E8BCA3 /* HSResult.swift in Sources */,
 				FDE922E72188479400E8BCA3 /* CompileOptions.swift in Sources */,
 				FDE922E42188441900E8BCA3 /* MatchingOptions.swift in Sources */,
+				FD02F0182191564D00DB1304 /* FileHandle+TextOutputStream.swift in Sources */,
 				FDE922E12186090100E8BCA3 /* ScratchPool.swift in Sources */,
 				OBJ_40 /* Hyperscan.swift in Sources */,
 				FDDF222021899B1B00CA8989 /* Match.swift in Sources */,
