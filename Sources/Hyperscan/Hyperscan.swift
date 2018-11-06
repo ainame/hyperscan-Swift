@@ -20,7 +20,7 @@ public class Hyperscan {
     }
     
     public func scan(_ input: String, for pattern: String, options: MatchingOptions = [.dotAll]) -> MatchResult? {
-
+        
         var matchResult = MatchResult(pattern: pattern, input: input)
         
         let result = pattern.withCString { patternPtr in
@@ -31,12 +31,12 @@ public class Hyperscan {
         
         return result ? matchResult : nil
     }
-
+    
     func blockScan(_ patternPtr: UnsafePointer<Int8>,
-                       _ inputPtr: UnsafePointer<Int8>,
-                       _ length: UInt32,
-                       _ matchingOptions: MatchingOptions,
-                       _ matchResult: inout MatchResult) -> Bool {
+                   _ inputPtr: UnsafePointer<Int8>,
+                   _ length: UInt32,
+                   _ matchingOptions: MatchingOptions,
+                   _ matchResult: inout MatchResult) -> Bool {
         
         let context = Context()
         defer { context.releaseMemory() }
@@ -82,27 +82,25 @@ public class Hyperscan {
               _ inputPtr: UnsafePointer<Int8>,
               _ length: UInt32,
               _ matchResult: inout MatchResult) throws {
-
+        
         func eventHandler(id: UInt32, from: UInt64, to: UInt64, flags: UInt32,
                           context: UnsafeMutableRawPointer?) -> Int32 {
-            
-            print("\(id) \(from) \(to) \(flags)")
             
             if let ptr = context?.assumingMemoryBound(to: MatchResult.self) {
                 let matchResult = ptr.pointee
                 matchResult.matches.append(Match(from: from, to: to))
             }
-           
+            
             return 0
         }
-
+        
         let result = run(swift_hs_scan(context.databasePtr,
                                        inputPtr,
                                        length,
                                        scratch,
                                        eventHandler,
                                        &matchResult))
-    
+        
         if result != Result.success {
             throw result
         }
