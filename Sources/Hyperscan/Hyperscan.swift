@@ -1,17 +1,6 @@
 import CHyperscan
 import Foundation
 
-public class MatchResult {
-    public var matches = [Match]()
-    public let pattern: String
-    public let input: String
-    
-    public init(pattern: String, input: String) {
-        self.pattern = pattern
-        self.input = input
-    }
-}
-
 public class Hyperscan {
     
     typealias MatchHandler = (UInt32, UInt64, UInt64, UInt32, UnsafeMutableRawPointer?) -> Int32
@@ -71,7 +60,7 @@ public class Hyperscan {
                                           context.databasePtr,
                                           context.compileErrorPtr))
         
-        if result != Result.success {
+        if result != HSResult.success {
             swift_print_compile_error(context.compileErrorPtr)
             throw result
         }
@@ -101,17 +90,16 @@ public class Hyperscan {
                                        eventHandler,
                                        &matchResult))
         
-        if result != Result.success {
+        if result != HSResult.success {
             throw result
         }
     }
     
     func allocScratch(_ context: Context) throws -> UnsafeMutablePointer<swift_hs_scratch_t> {
         let scratchPtr = UnsafeMutablePointer<swift_hs_scratch_t>.allocate(capacity: 1)
-        
         let result = run(swift_hs_alloc_scratch(context.databasePtr, scratchPtr))
         
-        if result != Result.success {
+        if result != HSResult.success {
             throw result
         }
         
@@ -119,9 +107,9 @@ public class Hyperscan {
     }
     
     @inline(__always)
-    func run(_ procedure: @autoclosure () -> hs_error_t) -> Result {
+    func run(_ procedure: @autoclosure () -> hs_error_t) -> HSResult {
         let rawResult = procedure()
-        guard let result = Result(rawValue: rawResult) else {
+        guard let result = HSResult(rawValue: rawResult) else {
             fatalError("ERROR: Unknown hs_error_t type = \(rawResult)")
         }
         

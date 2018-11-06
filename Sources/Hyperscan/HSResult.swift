@@ -1,6 +1,6 @@
 import Foundation
 
-enum Result: Int32, Swift.Error {
+enum HSResult: Int32, Swift.Error {
     /**
      * The engine completed normally.
      */
