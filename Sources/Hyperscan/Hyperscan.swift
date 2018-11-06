@@ -96,14 +96,16 @@ public class Hyperscan {
     }
     
     func allocScratch(_ context: Context) throws -> UnsafeMutablePointer<swift_hs_scratch_t> {
-        let scratchPtr = UnsafeMutablePointer<swift_hs_scratch_t>.allocate(capacity: 1)
-        let result = run(swift_hs_alloc_scratch(context.databasePtr, scratchPtr))
+        var scratch = swift_hs_scracth(scratch: nil)
+        let result = run(swift_hs_alloc_scratch(context.databasePtr, &scratch))
         
         if result != HSResult.success {
             throw result
         }
         
-        return scratchPtr
+        let ptr =  UnsafeMutablePointer<swift_hs_scratch_t>.allocate(capacity: 1)
+        ptr.initialize(to: scratch)
+        return ptr
     }
     
     @inline(__always)

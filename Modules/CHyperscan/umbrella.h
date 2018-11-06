@@ -27,7 +27,7 @@ hs_error_t HS_CDECL swift_hs_compile(const char *expression, unsigned int flags,
 
 hs_error_t HS_CDECL swift_hs_alloc_scratch(const swift_hs_database_t *db, swift_hs_scratch_t *scratch) {
     
-    return hs_alloc_scratch(db->database, &(*scratch).scratch);
+    return hs_alloc_scratch(db->database, &(scratch->scratch));
 }
 
 hs_error_t HS_CDECL swift_hs_scan(const swift_hs_database_t *db, const char *data,
